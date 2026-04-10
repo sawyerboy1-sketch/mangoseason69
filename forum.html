@@ -1,16 +1,55 @@
 <!DOCTYPE html>
-<html>
-<body style="background:#111;color:#fff;font-family:sans-serif;padding:20px;">
-<h1>Forum</h1>
-<textarea id="post"></textarea><br><br>
-<button onclick="addPost()">Post</button>
-<div id="posts"></div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forum | MangoSeason69</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">M</div>
+        <div><div class="brand-name">MangoSeason69</div><div class="brand-sub">private members experience</div></div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="forum.html">Forum</a>
+        <a href="subscribe.html">Subscribe</a>
+      </nav>
+    </div>
+  </header>
 
-<script>
-function addPost(){
-  let content = document.getElementById("post").value;
-  document.getElementById("posts").innerHTML += "<p>"+content+"</p>";
-}
-</script>
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Community Forum</span>
+        <h1>Post confessions, thoughts, and reactions.</h1>
+        <p class="lead">This is still a static demo, but the design now feels more premium and interactive.</p>
+      </div>
+
+      <div class="forum-compose">
+        <textarea id="postText" placeholder="Share something with the community..."></textarea>
+        <button class="btn" onclick="addPost()">Post Now</button>
+      </div>
+
+      <div id="feed" class="stack">
+        <article class="post-card">
+          <div class="post-top">
+            <div><strong>MangoSeason69</strong><div class="muted">Admin Post</div></div>
+            <span class="pill">Featured</span>
+          </div>
+          <p>Welcome to the community feed. This upgraded design gives you a cleaner, more premium forum look.</p>
+          <div class="post-actions">
+            <button onclick="likePost(this)">❤ Like</button>
+            <button onclick="commentPost(this)">💬 Comment</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
