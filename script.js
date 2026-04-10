@@ -19,9 +19,5 @@ function addPost(){
   feed.prepend(card);
   box.value = '';
 }
-function likePost(btn){
-  btn.textContent = '❤ Liked';
-}
-function commentPost(){
-  alert('This demo is ready to be connected to a real comment system later.');
-}
+function likePost(btn){ btn.textContent = '❤ Liked'; }
+function commentPost(){ alert('This demo is ready to be connected to a real comment system later.'); }
