@@ -4,52 +4,79 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Forum | MangoSeason69</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
+  <div id="intro-overlay">
+    <div class="intro-inner">
+      <img src="logo.png" alt="MangoSeason69 intro logo" class="intro-logo pulse-logo" />
+      <div class="intro-title">MangoSeason69</div>
+      <div class="intro-sub">private members experience</div>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="index.html">
-        <div class="brand-mark">M</div>
-        <div><div class="brand-name">MangoSeason69</div><div class="brand-sub">private members experience</div></div>
+        <img src="logo.png" class="logo pulse-logo" alt="MangoSeason69 logo" />
+        <div>
+          <div class="brand-name">MangoSeason69</div>
+          <div class="brand-sub">private members experience</div>
+        </div>
       </a>
       <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="forum.html">Forum</a>
-        <a href="subscribe.html">Subscribe</a>
+        <a href="index.html">Home</a><a href="forum.html">Forum</a><a href="subscribe.html">Subscribe</a>
       </nav>
+
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Community Forum</span>
-        <h1>Post confessions, thoughts, and reactions.</h1>
-        <p class="lead">This is still a static demo, but the design now feels more premium and interactive.</p>
-      </div>
+  <main>
 
-      <div class="forum-compose">
-        <textarea id="postText" placeholder="Share something with the community..."></textarea>
-        <button class="btn" onclick="addPost()">Post Now</button>
-      </div>
-
-      <div id="feed" class="stack">
-        <article class="post-card">
-          <div class="post-top">
-            <div><strong>MangoSeason69</strong><div class="muted">Admin Post</div></div>
-            <span class="pill">Featured</span>
-          </div>
-          <p>Welcome to the community feed. This upgraded design gives you a cleaner, more premium forum look.</p>
-          <div class="post-actions">
-            <button onclick="likePost(this)">❤ Like</button>
-            <button onclick="commentPost(this)">💬 Comment</button>
-          </div>
-        </article>
-      </div>
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Community Forum</span>
+      <h1>Post confessions, thoughts, and reactions.</h1>
+      <p class="lead">This is still a static demo, but the design now feels more premium and interactive.</p>
     </div>
+
+    <div class="forum-compose">
+      <textarea id="postText" placeholder="Share something with the community..."></textarea>
+      <button class="btn" onclick="addPost()">Post Now</button>
+    </div>
+
+    <div id="feed" class="stack">
+      <article class="post-card">
+        <div class="post-top">
+          <div><strong>MangoSeason69</strong><div class="muted">Admin Post</div></div>
+          <span class="pill">Featured</span>
+        </div>
+        <p>Welcome to the community feed. This upgraded design gives you a cleaner, more premium forum look.</p>
+        <div class="post-actions">
+          <button onclick="likePost(this)">❤ Like</button>
+          <button onclick="commentPost(this)">💬 Comment</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
   </main>
 
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© 2026 MangoSeason69</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Support</a>
+        <a href="subscribe.html">Subscribe</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/intro.js"></script>
   <script src="assets/script.js"></script>
 </body>
 </html>
