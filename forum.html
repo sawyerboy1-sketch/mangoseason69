@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body style="background:#111;color:#fff;font-family:sans-serif;padding:20px;">
+<h1>Forum</h1>
+<textarea id="post"></textarea><br><br>
+<button onclick="addPost()">Post</button>
+<div id="posts"></div>
+
+<script>
+function addPost(){
+  let content = document.getElementById("post").value;
+  document.getElementById("posts").innerHTML += "<p>"+content+"</p>";
+}
+</script>
+</body>
+</html>
